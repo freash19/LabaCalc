@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import org.mariuszgromada.math.mxparser.Expression;
 
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     RadioButton dexRadioButton;
     RadioButton octRadioButton;
     RadioButton binRadioButton;
+
+    RadioGroup notationRadioGroup;
 
     BigInteger bi;
     int notation = 10;
@@ -59,6 +62,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 (Button) findViewById(R.id.multiplyButton),
                 (Button) findViewById(R.id.divisionButton),
                 (Button) findViewById(R.id.equalsButton),
+
+                
                 (Button) findViewById(R.id.pointButton),
                 (Button) findViewById(R.id.orButton),
                 (Button) findViewById(R.id.xorButton),
@@ -72,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mainEditText = (EditText)findViewById(R.id.mainEditText);
         resultEditText = (EditText)findViewById(R.id.resultEditText);
 
-        notationRadioGroup
+        notationRadioGroup = (RadioGroup) findViewById(R.id.notationRadioGroup);
     }
 
     @Override
