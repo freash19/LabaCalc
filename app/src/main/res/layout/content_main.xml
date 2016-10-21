@@ -60,6 +60,7 @@
 
     </LinearLayout>
 
+<!--
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -80,10 +81,11 @@
                 android:layout_weight="1"/>
 
             <RadioButton
-                android:text="DEX"
+                android:text="DEC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/dexRadioButton"
+                android:id="@+id/decRadioButton"
+                android:checked="true"
                 android:textSize="@dimen/textSizeSymbolButtonAdd"
                 android:layout_weight="1"/>
 
@@ -104,6 +106,7 @@
                 android:layout_weight="1"/>
         </RadioGroup>
     </LinearLayout>
+-->
 
     <LinearLayout
         android:orientation="horizontal"
@@ -123,11 +126,12 @@
             app:mrl_rippleHover="true"
             app:mrl_rippleFadeDuration="400">
             <Button
-                android:text="Or"
+                android:text="HEX"
                 android:background="@color/colorButtonAdd"
+                android:textColor="@color/colorButtonOp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/orButton"
+                android:id="@+id/hexButton"
                 android:textSize="@dimen/textSizeSymbolButtonAdd"/>
         </com.balysv.materialripple.MaterialRippleLayout>
         <com.balysv.materialripple.MaterialRippleLayout
@@ -143,11 +147,34 @@
             app:mrl_rippleHover="true"
             app:mrl_rippleFadeDuration="400">
             <Button
-                android:text="XOR"
+                android:text="DEC"
                 android:background="@color/colorButtonAdd"
+                android:textColor="@color/colorButtonOp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/xorButton"
+                android:id="@+id/decButton"
+                android:textSize="@dimen/textSizeSymbolButtonAdd"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleColor="@color/colorButtonNum"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleRoundedCorners="50dp"
+            app:mrl_rippleDimension="15dp"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleFadeDuration="400">
+
+            <Button
+                android:text="OCT"
+                android:background="@color/colorButtonAdd"
+                android:textColor="@color/colorButtonOp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/octButton"
                 android:textSize="@dimen/textSizeSymbolButtonAdd"/>
         </com.balysv.materialripple.MaterialRippleLayout>
         <com.balysv.materialripple.MaterialRippleLayout
@@ -163,31 +190,12 @@
             app:mrl_rippleHover="true"
             app:mrl_rippleFadeDuration="400">
             <Button
-                android:text="NOT"
+                android:text="BIN"
                 android:background="@color/colorButtonAdd"
+                android:textColor="@color/colorButtonOp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/notButton"
-                android:textSize="@dimen/textSizeSymbolButtonAdd"/>
-        </com.balysv.materialripple.MaterialRippleLayout>
-        <com.balysv.materialripple.MaterialRippleLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            app:mrl_rippleOverlay="true"
-            app:mrl_rippleColor="@color/colorButtonNum"
-            app:mrl_rippleAlpha="0.2"
-            app:mrl_rippleRoundedCorners="50dp"
-            app:mrl_rippleDimension="15dp"
-            app:mrl_rippleDelayClick="false"
-            app:mrl_rippleHover="true"
-            app:mrl_rippleFadeDuration="400">
-            <Button
-                android:text="AnD"
-                android:background="@color/colorButtonAdd"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/andButton"
+                android:id="@+id/binButton"
                 android:textSize="@dimen/textSizeSymbolButtonAdd"/>
         </com.balysv.materialripple.MaterialRippleLayout>
         <com.balysv.materialripple.MaterialRippleLayout
